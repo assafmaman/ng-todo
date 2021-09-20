@@ -1,10 +1,20 @@
 .app{
    main {
      padding: 10px;
-     height: calc(100vh - 64px);//List - header 
-
+     height: calc(100vh - 84px);//List - header 
+     display: flex;// move object from down to right
+     gap: 10px;
      .list-container{
        width: 25%;
+     }
+     .todo-container{
+       width: 75%;
+     }
+
+     .add-new-todo-btn{
+       position: fixed;
+       bottom: 30px;
+       right: 30px;
      }
    }
 }
